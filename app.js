@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 
 
 // Middleware
+app.use(express.json()); // Handles JSON
+app.use(express.urlencoded({ extended: true })); 
 app.use(bodyParser.json());
 // app.use('/api/data', dataRoutes);
 
